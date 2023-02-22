@@ -8,8 +8,20 @@ a += 5;
 
 var b = 4
 b += 10;
-b -= 2
+b -= 22
 
+// multiplication
 
-console.log(a)
-console.log(b)
+j = 23
+
+j *= 2
+
+d = 14
+
+d /= 7
+d /= 1
+
+console.log("Augmented Addition",a)
+console.log("Augmented Subtraction",b)
+console.log("Augmented Multiplication",j)
+console.log("Augmented division",d)
