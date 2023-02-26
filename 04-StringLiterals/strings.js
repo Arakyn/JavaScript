@@ -23,3 +23,8 @@ console.log(mystr)
 
 mystr += " I know joe biden"
 console.log(mystr)
+
+// constructing strings with variables
+ik = " ,I also know Vladimir Putin"
+mystr += ik
+console.log(mystr)
