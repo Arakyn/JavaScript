@@ -28,3 +28,9 @@ console.log(mystr)
 ik = " ,I also know Vladimir Putin"
 mystr += ik
 console.log(mystr)
+
+//appending a variable
+
+var lol = " yoyo"
+mystr += lol;
+console.log(mystr)
