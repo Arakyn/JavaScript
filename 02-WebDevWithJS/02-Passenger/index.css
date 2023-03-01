@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Montserrat;
+  }
+.diver {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+  
+   
+
+  
+    
+} 
+.diver::before{
+  width: 400px;
+  height: 300px;
+  
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(https://cdn.britannica.com/16/238816-050-30DAEEFA/interior-empty-underground-Seoul-subway-train-Seoul-Korea-November-2020.jpg);
+  background-size: cover;
+  
+  opacity: 0.3;
+  filter: brightness(40%);
+  
+}
+
+
+.diver-text{
+    color: rgb(3, 0, 0);
+   font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+  
+    margin-bottom: 5px;
+    
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .button-div{
+    width: 400px;
+    height: 35px;
+    display: block;
+  }
+
+  button{
+ 
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(126, 126, 165);
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 20px;
+    width: 130px;
+    height: 30px;
+    
+  
+    transform: translate(80px);
+    
+   
+  }
+  #incrementerr{
+    background-color:darkred;
+    vertical-align: top;
+  }
+  #incrementerr:active{
+    color:darkred ;
+    background-color: white;
+  }
+  #saver{
+    background-color: aquamarine;
+    
+  }
+  #saver:active{
+    color:rgb(0, 0, 0) ;
+    background-color: white;
+  }
+  h2{
+    margin-bottom: 2px;
+  }
+
+  .prev-ent{
+    width: 400px;
+    height: 30px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 24px;
+    text-align: center;
+  }
