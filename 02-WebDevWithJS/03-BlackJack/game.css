@@ -9,10 +9,10 @@ body{
   .box{
     transform: translate(50%,20%);
     width: 500px;
-    height: 400px;
+    height: 500px;
   
     background-image: url(https://media.istockphoto.com/id/672546436/photo/green-felt-surface-with-light-copy-space-in-center.jpg?s=612x612&w=0&k=20&c=tmoRNwW8ScbTYOZp3_eZT1chRXBO3axrSZdk8skYJLM=);
-    background-size: contain;
+    background-size: cover;
   }
   .welcome{
     width: 500px;
@@ -42,14 +42,89 @@ border-radius: 10px;
 box-shadow: 0px 1px 5px;
    
   }
+  .end-button{
+
+    width: 96px;
+    height: 45px;
+    padding: 7px;
+    font-size: 24px;
+    color: rgb(21, 15, 15);
+    background-color:rgb(118, 176, 83) ;
+    margin-left: 30px;
+    cursor: pointer;
+transition: all 200ms;
+border: none;
+border-radius: 10px;
+box-shadow: 0px 1px 5px;
+   
+  }
+  .hit-button{
+
+    width: 96px;
+    height: 45px;
+    padding: 7px;
+    font-size: 24px;
+    color: rgb(21, 15, 15);
+    background-color:rgb(185, 151, 17) ;
+    margin-left: 28%;
+    cursor: pointer;
+transition: all 200ms;
+border: none;
+border-radius: 67px;
+box-shadow: 0px 1px 5px;
+   
+  }
+  .hold-button{
+
+    width: 96px;
+    height: 45px;
+    padding: 7px;
+    font-size: 24px;
+    color: rgb(21, 15, 15);
+    background-color:rgb(185, 151, 17) ;
+ margin-left: 50px;
+    cursor: pointer;
+transition: all 200ms;
+border: none;
+border-radius: 67px;
+box-shadow: 0px 1px 5px;
+   
+  }
   .start-button:active{
     background-color:rgb(104, 225, 29) ;
  
 
   }
+  .end-button:active{
+    background-color:rgb(104, 225, 29) ;
+ 
+
+  }
+  .hit-button:active{
+    background-color:rgb(213, 177, 18) ;
+ 
+
+  }
+  .hold-button:active{
+    background-color:rgb(213, 177, 18) ;
+ 
+
+  }
+  
   .cards{
     width: 500px;
-    height: 200px;
+    height: 110px;
+  }
+  .message{
+    margin-top: 20px;
+    height: 80px;
+    width: 500px;
+  }
+  .message-text{
+    color:goldenrod ;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
   }
   p{
   
@@ -61,14 +136,15 @@ box-shadow: 0px 1px 5px;
    
   }
   .nice{
-    margin-top: 16px;
+    margin-top: 4px;
     transform: translate(30%);
+    
   }
   .wantToPlay{
     font-style: italic;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
+  
     text-align: center;
     
 
@@ -76,4 +152,8 @@ box-shadow: 0px 1px 5px;
   .menu{
     width: 500px;
     height: 30px;
+  }
+  .hit-hold{
+    width: 500px;
+    height: 70px;
   }
