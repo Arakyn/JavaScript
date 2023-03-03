@@ -28,29 +28,31 @@ body{
 
   .start-button{
 
-    width: 96px;
+    width: 170px;
+    height: 45px;
+    padding: 7px;
+    display: block;
+    font-size: 24px;
+    color: rgb(21, 15, 15);
+    background-color:rgb(118, 176, 83) ;
+    margin-left: 35%;
+    cursor: pointer;
+transition: all 200ms;
+border: none;
+border-radius: 10px;
+box-shadow: 0px 1px 5px;
+margin-bottom: 20px;
+   
+  }
+  .end-button{
+
+    width: 170px;
     height: 45px;
     padding: 7px;
     font-size: 24px;
     color: rgb(21, 15, 15);
     background-color:rgb(118, 176, 83) ;
     margin-left: 28%;
-    cursor: pointer;
-transition: all 200ms;
-border: none;
-border-radius: 10px;
-box-shadow: 0px 1px 5px;
-   
-  }
-  .end-button{
-
-    width: 96px;
-    height: 45px;
-    padding: 7px;
-    font-size: 24px;
-    color: rgb(21, 15, 15);
-    background-color:rgb(118, 176, 83) ;
-    margin-left: 30px;
     cursor: pointer;
 transition: all 200ms;
 border: none;
