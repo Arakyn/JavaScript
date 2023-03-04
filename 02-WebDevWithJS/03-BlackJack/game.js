@@ -1,12 +1,16 @@
-let firstcard = 10;
-let secondcard = 3;
+let firstcard = getRandomCard();
+let secondcard = getRandomCard();
 
-let cardsArray = [firstcard," ",secondcard," "]
-let hasBlackJack = false;
+let cardsArray = [firstcard,secondcard]
+
 let sum = firstcard + secondcard;
-let isAlive = true;
-let htmlMessage = document.getElementById("message-el")
 
+
+function getRandomCard(){
+return 5
+}
+
+let htmlMessage = document.getElementById("message-el")
 let cards = document.querySelector("#cards-el")
 let sumHTML = document.querySelector("#sum-el")
 
@@ -16,20 +20,24 @@ let message = "";
 
 
 function newCard(){
-    
-let card = 8;
-cardsArray.push(8)
+let card = getRandomCard();
+cardsArray.push(card)
 sum += card
-
-    renderGame()
+renderGame()
 }
+
+
+
 
 function startGame (){
     renderGame()
 }
+
+
+
 function renderGame (){
 
-   
+sumHTML.textContent = "  "+ sum
    
 
 if (sum<21){
@@ -46,12 +54,13 @@ if (sum<21){
     isAlive = false;
  
 } 
+cardsArray.textContent = ""
 htmlMessage.textContent = message;
-
-
 console.log(message)
-console.log(isAlive)
-console.log(hasBlackJack)
-cards.textContent =  cardsArray
-sumHTML.textContent = "  "+ sum
+for (let i = 0;i<cardsArray.length;i++){
+cards.textContent += cardsArray[i] + " "
+i -= 1
+cardsArray.shift()
+}
+
 }
