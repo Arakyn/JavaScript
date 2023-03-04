@@ -64,3 +64,5 @@ cardsArray.shift()
 }
 
 }
+let number = Math.random()
+console.log(number)
