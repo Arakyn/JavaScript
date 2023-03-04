@@ -7,8 +7,15 @@ let sum = firstcard + secondcard;
 
 
 function getRandomCard(){
-return 5
+    randNum = Math.floor(Math.random()*13)+1;
+    if (randNum === 1) {
+        randNum=11
+    } else if (randNum >= 11){
+        randNum=10
+    }
+return randNum;
 }
+
 
 let htmlMessage = document.getElementById("message-el")
 let cards = document.querySelector("#cards-el")
@@ -57,12 +64,26 @@ if (sum<21){
 cardsArray.textContent = ""
 htmlMessage.textContent = message;
 console.log(message)
-for (let i = 0;i<cardsArray.length;i++){
+for (let i = 0;i<cardsArray.length;i++){ 
+  //  if (cardsArray[i] == "Q"){
+  //      cardsArray[i] == 12
+  //  } else if (cardsArray[i] == "J"){
+     //   cardsArray[i] == 11
+   // } else if (cardsArray[i] == "Q"){
+     //   cardsArray[i] == 12
+   // }
 cards.textContent += cardsArray[i] + " "
 i -= 1
 cardsArray.shift()
 }
-
 }
-let number = Math.random()
-console.log(number)
+
+
+
+
+function endGame(){
+    for (i < 0;i<cardsArray.length;i++){
+    cardsArray.pop;
+}
+renderGame()
+}
