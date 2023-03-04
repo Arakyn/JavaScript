@@ -1,7 +1,7 @@
 let firstcard = 10;
 let secondcard = 3;
 
-let cardsArray = [firstcard,secondcard]
+let cardsArray = [firstcard," ",secondcard," "]
 let hasBlackJack = false;
 let sum = firstcard + secondcard;
 let isAlive = true;
@@ -52,6 +52,6 @@ htmlMessage.textContent = message;
 console.log(message)
 console.log(isAlive)
 console.log(hasBlackJack)
-cards.textContent =  cardsArray[0] + " "+ cardsArray[1] + " "
+cards.textContent =  cardsArray
 sumHTML.textContent = "  "+ sum
 }
