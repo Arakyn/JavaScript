@@ -33,7 +33,7 @@ sum += card
 renderGame()
 }
 
-
+console.log("i wanna die")
 
 
 function startGame (){
